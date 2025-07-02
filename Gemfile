@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Specify Ruby version for consistency
-ruby "3.1.0"
+ruby "3.1.7"
 
 # GitHub Pages - this pulls in Jekyll and other dependencies
 gem "github-pages", "~> 228", group: :jekyll_plugins
