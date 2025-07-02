@@ -1,7 +1,7 @@
 title: My Test Site
 description: A simple Jekyll site for tinkering
 baseurl: ""
-url: "https://username.github.io"
+url: "https://anthonymckie.github.io"
 
 markdown: kramdown
 highlighter: rouge
