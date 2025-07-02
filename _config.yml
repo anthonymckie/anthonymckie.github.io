@@ -1,0 +1,11 @@
+title: My Test Site
+description: A simple Jekyll site for tinkering
+baseurl: ""
+url: "https://username.github.io"
+
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
