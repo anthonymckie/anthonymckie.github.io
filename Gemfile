@@ -1,27 +1,26 @@
 source "https://rubygems.org"
 
-# GitHub Pages gems
-gem "github-pages", group: :jekyll_plugins
+# Specify Ruby version for consistency
+ruby "3.1.0"
 
-# Jekyll plugins
-gem "jekyll-feed", "~> 0.12"
+# GitHub Pages - this pulls in Jekyll and other dependencies
+gem "github-pages", "~> 228", group: :jekyll_plugins
 
-# INTENTIONALLY VULNERABLE - for testing Dependabot
-# This version of nokogiri has known security vulnerabilities
-gem "nokogiri", "1.10.0"
+# INTENTIONALLY VULNERABLE GEMS (for testing Dependabot)
+# These are additional gems that won't conflict with github-pages
+gem "json", "2.3.0"        # Has known vulnerabilities in older versions
+gem "loofah", "2.12.0"     # Has XSS vulnerabilities in this version  
+gem "addressable", "2.7.0" # Has ReDoS vulnerability
 
-# This version of rack has vulnerabilities  
-gem "rack", "2.0.8"
-
-# Add some other potentially outdated gems
-gem "activesupport", "5.2.0"
-
+# Jekyll plugins (compatible with github-pages)
 group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
 end
 
 # Development and testing
 group :development, :test do
-  gem "html-proofer"
+  gem "html-proofer", "~> 4.0"
+  gem "bundler-audit"
 end
