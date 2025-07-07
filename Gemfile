@@ -8,7 +8,7 @@ gem "github-pages", "~> 228", group: :jekyll_plugins
 
 # INTENTIONALLY VULNERABLE GEMS (for testing Dependabot)
 # These are additional gems that won't conflict with github-pages
-gem "json", "2.3.0"        # Has known vulnerabilities in older versions
+gem "json", "2.12.2"       # Has known vulnerabilities in older versions
 gem "loofah", "2.12.0"     # Has XSS vulnerabilities in this version  
 gem "addressable", "2.7.0" # Has ReDoS vulnerability
 
