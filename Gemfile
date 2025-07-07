@@ -21,6 +21,6 @@ end
 
 # Development and testing
 group :development, :test do
-  gem "html-proofer", "~> 4.0"
+  gem "html-proofer", "~> 5.0"
   gem "bundler-audit"
 end
