@@ -4,7 +4,7 @@ source "https://rubygems.org"
 ruby "3.1.7"
 
 # GitHub Pages - this pulls in Jekyll and other dependencies
-gem "github-pages", "~> 228", group: :jekyll_plugins
+gem "github-pages", "~> 232", group: :jekyll_plugins
 
 # INTENTIONALLY VULNERABLE GEMS (for testing Dependabot)
 # These are additional gems that won't conflict with github-pages
